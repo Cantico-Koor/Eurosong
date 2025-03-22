@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stem op jouw favoriet!</title>
+    <link rel=stylesheet href="./CSS/main.css">
+    <link rel="icon" type="image/png" href="./AFBEELDINGEN/icon.png">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Stem voor jouw favoriet!</h1>
+        </div>
+        <div class="body">
+            <form action="./bedankt.html">
+                <div>
+                    <label for="name">Naam:</label><br>
+                <input type="text" id="naam" name="naam" required>
+                </div>
+                
+                <div>
+                    <label for="keuze">Jouw favoriet:</label><br>
+                    <select id="nummers" name="nummers">
+                        <option value="standaard" selected hidden>Kies hier uw favoriet!</option>
+                        <option value="1" name="1">1. Fairytale - Alexander Rybak</option>
+                        <option value="2" name="2">Liedje 2</option>
+                        <option value="3" name="3">Liedje 3</option>
+                        <option value="4" name="4">Liedje 4</option>
+                        <option value="5" name="5">Liedje 5</option>
+                        <option value="6" name="6">Liedje 6</option>
+                        <option value="7" name="7">Liedje 7</option>
+                    </select>
+                </div>
+                
+                <div>
+                  <input type="submit" value="Stem" id="stemKnop">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

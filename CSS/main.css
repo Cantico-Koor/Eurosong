@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(../AFBEELDINGEN/background.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main {
+    border-radius: 12px;
+    box-shadow: 0 2px 40px rgba(228, 228, 228, 0.945);
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #00b7ffa8;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+}
+
+.body {
+    background: #ffffffa8;
+    padding: 20px 10px 10px ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 8px 8px;
+}
+
+.body form{
+    padding-bottom: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+}
+
+#naam, select {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 85%;
+}
+
+select{
+    margin-bottom: 15px;
+}
+
+#naam:focus{
+    border-color: #6e7dff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(110, 125, 255, 0.5);
+}
+
+#stemKnop {
+    padding: 12px 24px;
+    background: #00b7ff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#keuze, #naam{
+    margin-bottom: 10px;
+}
+
+/* bedankt */
+
+h1{
+    color: rgb(255, 244, 244);
+}
