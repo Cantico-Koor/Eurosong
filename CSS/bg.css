@@ -6,7 +6,8 @@ body {
     padding: 0;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     background-image: url(../AFBEELDINGEN/merci.jpeg);
     background-size: cover;
     background-position: center;
