@@ -7,15 +7,16 @@ body {
     padding: 0;
     height: 100vh;
     display: flex;
-    align-items: flex-start; /* Zorgt ervoor dat de inhoud bovenaan blijft */
+    align-items: center; /* Tekst in het midden van de afbeelding */
     justify-content: center;
     background-image: url(../AFBEELDINGEN/merci.jpeg);
-    background-size: cover;
-    background-position: top center; /* Zorgt ervoor dat het gezicht altijd bovenaan gecentreerd blijft */
+    background-size: cover; /* Zorgt ervoor dat de afbeelding de hele viewport vult */
+    background-position: center top; /* Zorgt ervoor dat het gezicht bovenaan blijft */
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; /* Houdt de afbeelding op zijn plaats zonder scrollen */
     font-family: 'Arial', sans-serif;
-    overflow: hidden; /* Voorkomt scrollen */
+    overflow: hidden; /* Geen scrollen mogelijk */
+    width: 100vw; /* Voorkomt eventuele extra ruimte */
 }
 
 /* Specifieke aanpassing voor smartphones */
