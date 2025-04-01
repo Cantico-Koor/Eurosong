@@ -1,20 +1,31 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start; /* Zorgt ervoor dat de inhoud bovenaan blijft */
     justify-content: center;
     background-image: url(../AFBEELDINGEN/merci.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: top center; /* Zorgt ervoor dat het gezicht altijd bovenaan gecentreerd blijft */
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Voorkomt scrollen */
 }
+
+/* Specifieke aanpassing voor smartphones */
+@media (max-width: 768px) {
+    body {
+        background-size: contain; /* Voorkomt dat het gezicht wordt afgesneden */
+        background-attachment: scroll; /* Houdt de achtergrond statisch */
+    }
+}
+
 
 .main {
     border-radius: 12px;
