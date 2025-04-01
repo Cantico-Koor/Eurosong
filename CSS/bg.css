@@ -2,22 +2,24 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center; /* Tekst in het midden van de afbeelding */
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Zorgt ervoor dat de tekst bovenaan blijft */
     background-image: url(../AFBEELDINGEN/merci.jpeg);
-    background-size: cover; /* Zorgt ervoor dat de afbeelding de hele viewport vult */
+    background-size: 100% 100%; /* Zorgt ervoor dat de afbeelding de volledige breedte en hoogte bedekt */
     background-position: center top; /* Zorgt ervoor dat het gezicht bovenaan blijft */
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Houdt de afbeelding op zijn plaats zonder scrollen */
+    background-attachment: fixed;
     font-family: 'Arial', sans-serif;
-    overflow: hidden; /* Geen scrollen mogelijk */
-    width: 100vw; /* Voorkomt eventuele extra ruimte */
+    overflow: hidden; /* Voorkomt scrollen */
 }
+
 
 /* Specifieke aanpassing voor smartphones */
 @media (max-width: 768px) {
