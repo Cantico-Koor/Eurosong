@@ -2,32 +2,21 @@
     box-sizing: border-box;
 }
 
-html, body {
+body {
     margin: 0;
     padding: 0;
-    width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Houdt de tekst bovenaan */
+    align-items: flex-start;
+    justify-content: center;
     background-image: url(../AFBEELDINGEN/merci.jpeg);
-    background-size: cover; /* Zorgt ervoor dat de afbeelding het hele scherm vult zonder vervorming */
-    background-position: center top; /* Houdt het gezicht bovenaan gecentreerd */
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Arial', sans-serif;
-    overflow: hidden; /* Voorkomt scrollen */
+    overflow: hidden;
 }
-
-/* Specifieke aanpassing voor smartphones */
-@media (max-width: 768px) {
-    body {
-        background-size: contain; /* Voorkomt dat het gezicht wordt afgesneden */
-        background-attachment: scroll; /* Houdt de achtergrond statisch */
-    }
-}
-
 
 .main {
     border-radius: 12px;
