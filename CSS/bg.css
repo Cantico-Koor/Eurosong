@@ -10,16 +10,15 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Zorgt ervoor dat de tekst bovenaan blijft */
+    justify-content: flex-start; /* Houdt de tekst bovenaan */
     background-image: url(../AFBEELDINGEN/merci.jpeg);
-    background-size: 100% 100%; /* Zorgt ervoor dat de afbeelding de volledige breedte en hoogte bedekt */
-    background-position: center top; /* Zorgt ervoor dat het gezicht bovenaan blijft */
+    background-size: cover; /* Zorgt ervoor dat de afbeelding het hele scherm vult zonder vervorming */
+    background-position: center top; /* Houdt het gezicht bovenaan gecentreerd */
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Arial', sans-serif;
     overflow: hidden; /* Voorkomt scrollen */
 }
-
 
 /* Specifieke aanpassing voor smartphones */
 @media (max-width: 768px) {
